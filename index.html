@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhav M S — AI Agent Developer</title>
+  <meta name="description" content="Portfolio of Madhav M S — AI Agent Developer, Platform Engineer, CS Student at CIT & IIT Madras." />
+
+  <!-- Google Fonts: Syne (display) + DM Mono (code) + Instrument Serif (italic accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── CURSOR ── -->
+  <<div id="c-dot"></div>
+  <div id="c-ring"></div>
+
+  <!-- ── NAVBAR ── -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">~M~</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn" title="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button class="nav-hamburger" id="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-inner">
+      <!-- Status badge -->
+      <div class="hero-badge">
+        <div class="hero-badge-dot"></div>
+        Available for Opportunities
+      </div>
+
+      <!-- Name -->
+      <h1 class="hero-name">
+        MADHAV<br>
+        <span class="hi">M S</span>
+      </h1>
+
+      <!-- Role + Typewriter -->
+      <p class="hero-role">
+        Computer Science & Data Science Student
+        <span id="type-cursor"></span>
+      </p>
+
+      <!-- Short bio -->
+      <p class="hero-bio">
+        Building intelligent systems at the intersection of AI, cloud, and decentralized technologies.
+        Pursuing a B.E. in Computer Science at CIT alongside a B.S. in Data Science from IIT Madras.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-solid">
+          <i class="fa-solid fa-code"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fa-solid fa-paper-plane"></i> Get in Touch
+        </a>
+        <a href="https://drive.google.com/file/d/1TMdhLXsBFE2vq0bY1QIpI3-8bXWl4Jup/view?usp=sharing" target="_blank" class="btn btn-solid">
+          <i class="fa-solid fa-file-pdf"></i> Resume
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero-scroll-hint">
+      Scroll <div class="scroll-bar"></div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════════ -->
+  <section id="about">
+    <span class="sec-label reveal">01 / About</span>
+    <h2 class="sec-title reveal">
+      Building things I<br>
+      <span class="italic-accent" style="color:var(--accent)">actually understand.</span>
+    </h2>
+
+    <div class="about-grid">
+      <!-- Text -->
+      <div class="about-body reveal">
+        <p>
+        I'm a <strong>Computer Science</strong> student at Chennai Institute of Technology, 
+        concurrently pursuing a BS in <strong>Data Science</strong> from IIT Madras — 
+        intentionally operating at the intersection of systems and intelligence.
+        </p>
+        <p>
+          My focus is building <strong>AI-powered systems</strong>: RAG pipelines, agentic workflows,
+          and intelligent systems using LangChain, Strands SDK, APIs, and FastAPI.
+        </p>
+        <p>
+          Alongside this, I’m actively exploring <strong>decentralized technologies and cloud systems</strong>, 
+          building foundational projects to understand how modern distributed systems work end-to-end.
+        </p>
+
+        <!-- Stats -->
+        <div class="stat-row">
+          <div class="stat-card">
+            <div class="stat-val">Build</div>
+            <div class="stat-lbl">From idea to working systems</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-val">Deploy</div>
+            <div class="stat-lbl">From prototype to production</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card -->
+      <div class="reveal reveal-delay-2">
+        <div class="about-card">
+          <div class="ac-head">
+            <div class="avatar">M</div>
+            <div>
+              <div class="ac-name">Madhav M S</div>
+              <div class="ac-sub">Chennai, Tamil Nadu · India</div>
+            </div>
+          </div>
+
+          <div class="ac-block purple">
+            <div class="ac-block-lbl">⚡ Currently Building</div>
+            <div class="ac-item">MedicaLog: A Consent-Based Medication Adherence Awareness System</div>
+            <div class="ac-item">Real-Time Multimodal RAG System (RTMRA)</div>
+          </div>
+
+          <div class="ac-block teal">
+            <div class="ac-block-lbl">📚 Currently Learning</div>
+            <div class="ac-item">RAG systems at scale (retrieval, ranking, evaluation)</div>
+            <div class="ac-item">Agentic architectures (multi-step reasoning, tool integration)</div>
+            <div class="ac-item">Cloud infrastructure for AI deployment</div>
+            <div class="ac-item">Reliability & failure patterns in AI systems </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════════════
+       EXPERIENCE & EDUCATION
+  ═══════════════════════════════════════════ -->
+  <section id="experience">
+    <span class="sec-label reveal">02 / Experience &amp; Education</span>
+    <h2 class="sec-title reveal">
+      Where I've been<br>
+      <span class="italic-accent" style="color:var(--accent2)">so far.</span>
+    </h2>
+
+    <div class="exp-cols">
+
+      <!-- Work -->
+      <div class="reveal">
+        <div class="col-heading">Work Experience</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">Nov – Dec 2025</div>
+            <div class="tl-title">Platform Engineer</div>
+            <div class="tl-org">Invisibl Cloud Solutions Pvt Ltd · Internship</div>
+            <ul class="tl-list">
+              <li>Built a production-grade RAG system for multi-format document understanding using LangChain, Sentence Transformers, and ChromaDB.</li>
+              <li>Designed an agentic RAG workflow with Strands SDK, enabling LLMs to autonomously perform retrieval, reasoning, and tool execution.</li>
+              <li>Developed a Python-based code interpreter for natural-language-driven CSV/XLSX analysis with dynamic visualisations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="reveal reveal-delay-2">
+        <div class="col-heading">Education</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">2024 – 2028</div>
+            <div class="tl-title">BE Computer Science Engineering</div>
+            <div class="tl-org">Chennai Institute of Technology</div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">2024 – Present</div>
+            <div class="tl-title">BS Data Science &amp; Applications</div>
+            <div class="tl-org">IIT Madras</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTS
+  ═══════════════════════════════════════════ -->
+  <section id="projects">
+    <span class="sec-label reveal">03 / Projects</span>
+    <h2 class="sec-title reveal">
+      Things I've<br>
+      <span class="italic-accent" style="color:var(--accent)">built.</span>
+    </h2>
+    <p class="sec-sub reveal">
+      From agentic AI pipelines to decentralised storage — each project is a real problem I chose to solve.
+    </p>
+
+    <!-- Filter bar -->
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-f="all">All</button>
+      <button class="filter-btn" data-f="ai">AI / ML</button>
+      <button class="filter-btn" data-f="web3">Web3</button>
+      <button class="filter-btn" data-f="full">Full-Stack</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- 1. Agentic RAG (Strands) -->
+      <div class="proj-card reveal" data-cat="ai">
+        <div class="proj-top">
+          <div class="proj-icon ai">🤖</div>
+          <div class="proj-links">
+            <a href="https://github.com/VampiricCyborg/RAG-Agent-Using-AWS-Strands" target="_blank" class="proj-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-status s-done"><div class="sdot"></div> Completed</div>
+        <div class="proj-title">Agentic RAG System · AWS Strands</div>
+        <div class="proj-desc">
+          Production-grade agentic RAG pipeline enabling autonomous decision-making
+          between document retrieval, reasoning, and tool execution. Semantic retrieval
+          with ChromaDB exposed via FastAPI REST APIs.
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">FastAPI</span>
+          <span class="tech-tag">Strands SDK</span>
+          <span class="tech-tag">LangChain</span>
+          <span class="tech-tag">ChromaDB</span>
+          <span class="tech-tag">Groq LLM</span>
+          <span class="tech-tag">Python</span>
+        </div>
+      </div>
+
+
+
+      <!-- 2. DecentraVault -->
+      <div class="proj-card reveal reveal-delay-2" data-cat="web3">
+        <div class="proj-top">
+          <div class="proj-icon web3">🔐</div>
+          <div class="proj-links">
+            <a href="https://github.com/VampiricCyborg/DecentraVault" target="_blank" class="proj-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-status s-done"><div class="sdot"></div> Prototype</div>
+        <div class="proj-title">DecentraVault</div>
+        <div class="proj-desc">
+          Decentralised file storage dApp — files AES-256 encrypted in-browser, stored on IPFS,
+          metadata recorded immutably on Ethereum smart contracts.
+          MetaMask wallet login with React + TypeScript frontend.
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Solidity</span>
+          <span class="tech-tag">IPFS</span>
+          <span class="tech-tag">Ethers.js</span>
+          <span class="tech-tag">MetaMask</span>
+        </div>
+      </div>
+
+      <!-- 3. MedicaLog -->
+      <div class="proj-card reveal" data-cat="full">
+        <div class="proj-top">
+          <div class="proj-icon full">💊</div>
+          <div class="proj-links">
+            <a href="https://github.com/VampiricCyborg/MedicaLog" target="_blank" class="proj-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-status s-done"><div class="sdot"></div> Completed</div>
+        <div class="proj-title">MedicaLog · Medication Tracker</div>
+        <div class="proj-desc">
+          Server-first health tracking platform for medication adherence and lifestyle monitoring.
+          Integrates Python-based AI pattern analysis with RAG to extract insights while
+          enforcing strict non-clinical safety constraints.
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">Next.js</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Prisma</span>
+          <span class="tech-tag">SQLite</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">RAG</span>
+        </div>
+      </div>
+
+      <!-- 4. RTMRA (In Progress) -->
+      <div class="proj-card reveal reveal-delay-1" data-cat="ai">
+        <div class="proj-top">
+          <div class="proj-icon ai">🌊</div>
+          <div class="proj-links">
+            <a href="https://github.com/VampiricCyborg" target="_blank" class="proj-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-status s-progress"><div class="sdot"></div> In Progress</div>
+        <div class="proj-title">RTMRA · Real-Time Multimodal RAG</div>
+        <div class="proj-desc">
+          System to ingest and reason over real-time data streams. Combines stream processing
+          with embeddings and retrieval for continuous semantic understanding of live,
+          evolving information sources.
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Embeddings</span>
+          <span class="tech-tag">Vector DB</span>
+          <span class="tech-tag">Stream Processing</span>
+          <span class="tech-tag">APIs</span>
+        </div>
+      </div>
+
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════════════
+       SKILLS
+  ═══════════════════════════════════════════ -->
+  <section id="skills">
+    <span class="sec-label reveal">04 / Skills</span>
+    <h2 class="sec-title reveal">
+      My tech<br>
+      <span class="italic-accent" style="color:var(--accent2)">arsenal.</span>
+    </h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-cat reveal">
+        <div class="cat-hd">
+          <div class="cat-ico ico-ai"><i class="fa-solid fa-brain"></i></div>
+          <div class="cat-name">CORE</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill">AI Systems</span>
+          <span class="skill-pill">Backend Engineering</span>
+          <span class="skill-pill">API Design</span>
+          <span class="skill-pill">System Design</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal reveal-delay-1">
+        <div class="cat-hd">
+          <div class="cat-ico ico-lang"><i class="fa-solid fa-code"></i></div>
+          <div class="cat-name">AI ENGINEERING</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill">RAG Pipelines</span>
+          <span class="skill-pill">Agentic Workflows</span>
+          <span class="skill-pill">LangChain</span>
+          <span class="skill-pill">ChromaDB</span>
+          <span class="skill-pill">Sentence Transformers</span>
+          <span class="skill-pill">Prompt Engineering</span>
+          <span class="skill-pill">Evaluation</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal reveal-delay-2">
+        <div class="cat-hd">
+          <div class="cat-ico ico-be"><i class="fa-solid fa-server"></i></div>
+          <div class="cat-name">BACKEND</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">Flask</span>
+          <span class="skill-pill">REST APIs</span>
+          <span class="skill-pill">Authentication</span>
+          <span class="skill-pill">Async Processing</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <div class="cat-hd">
+          <div class="cat-ico ico-web3"><i class="fa-solid fa-cube"></i></div>
+          <div class="cat-name">DATA</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill">MySQL</span>
+          <span class="skill-pill">SQLite</span>
+          <span class="skill-pill">Vector Databases</span>
+          <span class="skill-pill">Data Processing</span>
+          <span class="skill-pill">NumPy</span>
+          <span class="skill-pill">Pandas</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal reveal-delay-1">
+        <div class="cat-hd">
+          <div class="cat-ico ico-cloud"><i class="fa-solid fa-cloud"></i></div>
+          <div class="cat-name">Cloud &amp; DevOps</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill">AWS EC2</span>
+          <span class="skill-pill">AWS S3</span>
+          <span class="skill-pill">Git / GitHub</span>
+          <span class="skill-pill">Vercel</span>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal reveal-delay-2">
+        <div class="cat-hd">
+          <div class="cat-ico ico-data"><i class="fa-solid fa-chart-bar"></i></div>
+          <div class="cat-name">LANGUAGES</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">Scripting Languages</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">Java</span>
+
+        </div>
+      </div>
+
+       <div class="skill-cat reveal reveal-delay-2">
+        <div class="cat-hd">
+          <div class="cat-ico ico-data"><i class="fa-solid fa-chart-bar"></i></div>
+          <div class="cat-name">EXPLORING</div>
+        </div>
+        <div class="skill-pills">
+          <span class="skill-pill">Cloud Architecture</span>
+          <span class="skill-pill">Distributed Systems</span>
+          <span class="skill-pill">Blockchain</span>
+          <span class="skill-pill">Smart Contracts</span>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════════ -->
+  <section id="contact">
+    <span class="sec-label reveal">05 / Contact</span>
+
+    <div class="contact-grid">
+
+      <!-- Left: info -->
+      <div class="reveal">
+        <h2 class="contact-title">
+          Let's build<br>something
+          <span class="italic-accent">great</span><br>
+          <span>together.</span>
+        </h2>
+        <p class="contact-sub">
+          Open to internships, collaborations, and interesting problems.
+          If you're building at the edge of AI, cloud, or Web3 — I want to hear about it.
+        </p>
+
+        <div class="contact-socials">
+          <a href="mailto:madhavmsoff030307@gmail.com" class="c-link">
+            <div class="c-link-ico"><i class="fa-solid fa-envelope"></i></div>
+            madhavmsoff030307@gmail.com
+          </a>
+          <a href="https://github.com/VampiricCyborg" target="_blank" class="c-link">
+            <div class="c-link-ico"><i class="fa-brands fa-github"></i></div>
+            github.com/VampiricCyborg
+          </a>
+          <a href="https://www.linkedin.com/in/madhav-ms/" target="_blank" class="c-link">
+            <div class="c-link-ico"><i class="fa-brands fa-linkedin"></i></div>
+            linkedin.com/in/madhav-ms
+          </a>
+          <a href="https://leetcode.com/u/madhav_ms/" target="_blank" class="c-link">
+            <div class="c-link-ico"><i class="fa-solid fa-code"></i></div>
+            leetcode.com/u/madhav_ms
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="contact-form reveal reveal-delay-2">
+        <div class="fg">
+          <label for="cf-name">Your Name</label>
+          <input type="text" id="cf-name" placeholder="Jane Doe" />
+        </div>
+        <div class="fg">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" placeholder="jane@example.com" />
+        </div>
+        <div class="fg">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" placeholder="Tell me about your project or opportunity…"></textarea>
+        </div>
+        <button class="form-submit" onclick="submitForm()">
+          Send Message &nbsp;<i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-txt">Designed &amp; built by <span>Madhav M S</span></div>
+    <div class="footer-txt">© 2026 · All rights reserved</div>
+  </footer>
+
+  <!-- ════════════════════════════════════════════════════════
+       JAVASCRIPT
+  ════════════════════════════════════════════════════════ -->
+  <script>
+    /* ── CURSOR ── */
+    const dot  = document.getElementById('c-dot');
+    const ring = document.getElementById('c-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.left = mx + 'px';
+      dot.style.top  = my + 'px';
+    });
+
+    (function animRing() {
+      rx += (mx - rx) * 0.13;
+      ry += (my - ry) * 0.13;
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animRing);
+    })();
+
+    document.querySelectorAll('a,button,.proj-card,.stat-card,.skill-cat').forEach(el => {
+      el.addEventListener('mouseenter', () => ring.classList.add('big'));
+      el.addEventListener('mouseleave', () => ring.classList.remove('big'));
+    });
+
+    /* ── THEME TOGGLE ── */
+    const themeBtn = document.getElementById('themeBtn');
+    let dark = true;
+    themeBtn.addEventListener('click', () => {
+      dark = !dark;
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      themeBtn.innerHTML = dark
+        ? '<i class="fa-solid fa-moon"></i>'
+        : '<i class="fa-solid fa-sun"></i>';
+    });
+
+    /* ── MOBILE NAV ── */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+
+    /* ── SCROLL REVEAL ── */
+    const revObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -36px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
+
+    /* ── ACTIVE NAV HIGHLIGHT ── */
+    const sections  = document.querySelectorAll('section[id]');
+    const navAs     = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 90) cur = s.id;
+      });
+      navAs.forEach(a => {
+        const match = a.getAttribute('href') === '#' + cur;
+        a.classList.toggle('active', match);
+      });
+    }, { passive: true });
+
+    /* ── PROJECT FILTER ── */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projCards  = document.querySelectorAll('.proj-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.f;
+        projCards.forEach(c => {
+          const show = f === 'all' || c.dataset.cat === f;
+          c.classList.toggle('hidden', !show);
+        });
+      });
+    });
+
+    /* ── TYPEWRITER ── */
+    const phrases = [' · RAG Builder', ' · Platform Engineer', ' · Web3 Dev', ' · Problem Solver'];
+    let pi = 0, ci = 0, del = false;
+    const el = document.getElementById('type-cursor');
+
+    function typeLoop() {
+      const w = phrases[pi];
+      if (!del) {
+        el.textContent = w.slice(0, ++ci);
+        if (ci === w.length) { del = true; setTimeout(typeLoop, 1800); return; }
+      } else {
+        el.textContent = w.slice(0, --ci);
+        if (ci === 0) { del = false; pi = (pi + 1) % phrases.length; }
+      }
+      setTimeout(typeLoop, del ? 45 : 95);
+    }
+    setTimeout(typeLoop, 1400);
+
+    /* ── CONTACT FORM ── */
+    function submitForm() {
+      const name  = document.getElementById('cf-name').value.trim();
+      const email = document.getElementById('cf-email').value.trim();
+      const msg   = document.getElementById('cf-msg').value.trim();
+      if (!name || !email || !msg) { alert('Please fill in all fields.'); return; }
+      window.location.href =
+        `mailto:madhavmsoff030307@gmail.com`
+        + `?subject=Portfolio Contact from ${encodeURIComponent(name)}`
+        + `&body=${encodeURIComponent(msg + '\n\nFrom: ' + name + '\nEmail: ' + email)}`;
+    }
+  </script>
+</body>
+</html>
