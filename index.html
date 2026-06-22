@@ -84,7 +84,7 @@
         <a href="#contact" class="btn btn-ghost">
           <i class="fa-solid fa-paper-plane"></i> Get in Touch
         </a>
-        <a href="https://drive.google.com/file/d/1TMdhLXsBFE2vq0bY1QIpI3-8bXWl4Jup/view?usp=sharing" target="_blank" class="btn btn-solid">
+        <a href="https://drive.google.com/file/d/1CuVLTjG5ioa_P5TDbekvURoBMG2ErB24/view?usp=sharing" target="_blank" class="btn btn-solid">
           <i class="fa-solid fa-file-pdf"></i> Resume
         </a>
 
@@ -105,8 +105,8 @@
   <section id="about">
     <span class="sec-label reveal">01 / About</span>
     <h2 class="sec-title reveal">
-      Building things I<br>
-      <span class="italic-accent" style="color:var(--accent)">actually understand.</span>
+      Building Systems from<br>
+      <span class="italic-accent" style="color:var(--accent)">first principles.</span>
     </h2>
 
     <div class="about-grid">
@@ -118,8 +118,8 @@
         intentionally operating at the intersection of systems and intelligence.
         </p>
         <p>
-          My focus is building <strong>AI-powered systems</strong>: RAG pipelines, agentic workflows,
-          and intelligent systems using LangChain, Strands SDK, APIs, and FastAPI.
+          My focus is engineering <strong>AI-powered systems</strong>, from retrieval and orchestration to deployment and evaluation.
+          I build RAG pipelines, multi-agent workflows, and backend infrastructure using LangGraph, Strands SDK, FastAPI, and AWS.
         </p>
         <p>
           Alongside this, I’m actively exploring <strong>decentralized technologies and cloud systems</strong>, 
@@ -130,11 +130,11 @@
         <div class="stat-row">
           <div class="stat-card">
             <div class="stat-val">Build</div>
-            <div class="stat-lbl">From idea to working systems</div>
+            <div class="stat-lbl">AI Systems & APIs</div>
           </div>
           <div class="stat-card">
-            <div class="stat-val">Deploy</div>
-            <div class="stat-lbl">From prototype to production</div>
+            <div class="stat-val">Scale</div>
+            <div class="stat-lbl">Cloud & Deployment</div>
           </div>
         </div>
       </div>
@@ -153,15 +153,16 @@
           <div class="ac-block purple">
             <div class="ac-block-lbl">⚡ Currently Building</div>
             <div class="ac-item">MedicaLog: A Consent-Based Medication Adherence Awareness System</div>
-            <div class="ac-item">Real-Time Multimodal RAG System (RTMRA)</div>
+            <div class="ac-item">DocuQuery: AI-powered RAG platform for querying and managing private document fleets</div>
           </div>
 
           <div class="ac-block teal">
             <div class="ac-block-lbl">📚 Currently Learning</div>
-            <div class="ac-item">RAG systems at scale (retrieval, ranking, evaluation)</div>
-            <div class="ac-item">Agentic architectures (multi-step reasoning, tool integration)</div>
-            <div class="ac-item">Cloud infrastructure for AI deployment</div>
-            <div class="ac-item">Reliability & failure patterns in AI systems </div>
+            <div class="ac-item">A2A Communication</div>
+            <div class="ac-item">Model Context Protocol</div>
+            <div class="ac-item">AI Evaluation and Observability</div>
+            <div class="ac-item">Distributed AI Systems</div>
+            <div class="ac-item">Cloud Native AI Deployment</div>
           </div>
         </div>
       </div>
@@ -186,6 +187,17 @@
       <div class="reveal">
         <div class="col-heading">Work Experience</div>
         <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-period">April - June 2026</div>
+            <div class="tl-title">AI Engineer</div>
+            <div class="tl-org">Invisibl Cloud Solutions Pvt Ltd · Internship</div>
+            <ul class="tl-list">
+              <li>Built a multi-agent Medical Protocol Assistant using LangGraph, ChromaDB, and Groq LLMs, enabling context-aware retrieval and safety-focused protocol validation.</li>
+              <li>Engineered a cyclic agent orchestration workflow with feedback loops, metadata-filtered retrieval, retry mechanisms, and MCP server integrations for tool-enabled agent execution.</li>
+              <li>Developed an LLM-powered validation layer that detects protocol conflicts, prioritizes context-specific guidance, and generates safety-aware recommendations using structured reasoning.</li>
+            </ul>
+          </div>
           <div class="tl-item">
             <div class="tl-dot"></div>
             <div class="tl-period">Nov – Dec 2025</div>
@@ -349,6 +361,30 @@
         </div>
       </div>
 
+      <!-- 5. DocuQuery (In Progress) -->
+      <div class="proj-card reveal reveal-delay-1" data-cat="ai">
+        <div class="proj-top">
+          <div class="proj-icon ai">🌊</div>
+          <div class="proj-links">
+            <a href="https://github.com/VampiricCyborg/DocuQuery-" target="_blank" class="proj-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+        <div class="proj-status s-progress"><div class="sdot"></div> In Progress</div>
+        <div class="proj-title">DocuQuery · Document Query System</div>
+        <div class="proj-desc">
+          AI-powered RAG platform for querying and managing private document fleets with intelligent retrieval, agentic workflows, and multi-format document support.
+        </div>
+        <div class="tech-stack">
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Tailwind-Shadcn stack</span>
+          <span class="tech-tag">pgvector</span>
+          <span class="tech-tag">RAG</span>
+          <span class="tech-tag">Groq</span>
+          <span class="tech-tag">OAuth</span>
+          <span class="tech-tag">Docker/vercel/render</span>
+        </div>
+      </div>
+
   </section>
 
   <hr class="divider" />
@@ -386,11 +422,13 @@
         <div class="skill-pills">
           <span class="skill-pill">RAG Pipelines</span>
           <span class="skill-pill">Agentic Workflows</span>
+          <span class="skill-pill">Multi-Agent Systems</span>
+          <span class="skill-pill">Langraph</span>
           <span class="skill-pill">LangChain</span>
-          <span class="skill-pill">ChromaDB</span>
-          <span class="skill-pill">Sentence Transformers</span>
+          <span class="skill-pill">Agent Orchestration</span>
+          <span class="skill-pill">MCP Servers</span>
           <span class="skill-pill">Prompt Engineering</span>
-          <span class="skill-pill">Evaluation</span>
+          <span class="skill-pill">Semantic Search</span>
         </div>
       </div>
 
@@ -453,13 +491,13 @@
        <div class="skill-cat reveal reveal-delay-2">
         <div class="cat-hd">
           <div class="cat-ico ico-data"><i class="fa-solid fa-chart-bar"></i></div>
-          <div class="cat-name">EXPLORING</div>
+          <div class="cat-name">Emerging Technologies</div>
         </div>
         <div class="skill-pills">
           <span class="skill-pill">Cloud Architecture</span>
           <span class="skill-pill">Distributed Systems</span>
-          <span class="skill-pill">Blockchain</span>
-          <span class="skill-pill">Smart Contracts</span>
+          <span class="skill-pill">Blockchain Development</span>
+          <span class="skill-pill">Smart Contract Development</span>
         </div>
       </div>
 
@@ -627,7 +665,12 @@
     });
 
     /* ── TYPEWRITER ── */
-    const phrases = [' · RAG Builder', ' · Platform Engineer', ' · Web3 Dev', ' · Problem Solver'];
+    const phrases = [
+  ' · AI Systems Builder',
+  ' · Multi-Agent Developer',
+  ' · Platform Engineer',
+  ' · Backend Engineer'
+];
     let pi = 0, ci = 0, del = false;
     const el = document.getElementById('type-cursor');
 
