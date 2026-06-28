@@ -1,0 +1,14 @@
+name: Email Check
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 24f2004254@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
