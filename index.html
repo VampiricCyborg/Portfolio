@@ -84,7 +84,7 @@
         <a href="#contact" class="btn btn-ghost">
           <i class="fa-solid fa-paper-plane"></i> Get in Touch
         </a>
-        <a href="https://drive.google.com/file/d/1CuVLTjG5ioa_P5TDbekvURoBMG2ErB24/view?usp=sharing" target="_blank" class="btn btn-solid">
+        <a href="https://drive.google.com/file/d/1t8l-4Le8873Rvf7t17yCMqcgtoPr9FvC/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-solid">
           <i class="fa-solid fa-file-pdf"></i> Resume
         </a>
 
@@ -118,12 +118,11 @@
         intentionally operating at the intersection of systems and intelligence.
         </p>
         <p>
-          My focus is engineering <strong>AI-powered systems</strong>, from retrieval and orchestration to deployment and evaluation.
-          I build RAG pipelines, multi-agent workflows, and backend infrastructure using LangGraph, Strands SDK, FastAPI, and AWS.
+          My focus is engineering <strong>AI-powered systems</strong>, from retrieval and orchestration to deployment and evaluation. I’m currently building Sluice and Vigilarch while deepening my understanding of distributed systems, observability, resilient routing, and cloud-native operations.
         </p>
         <p>
           Alongside this, I’m actively exploring <strong>decentralized technologies and cloud systems</strong>, 
-          building foundational projects to understand how modern distributed systems work end-to-end.
+          building foundational projects to understand how modern distributed systems work end-to-end. I’m learning the concepts these systems need: distributed state, queueing, capacity governance, offline-first design, and production reliability.
         </p>
 
         <!-- Stats -->
@@ -152,17 +151,16 @@
 
           <div class="ac-block purple">
             <div class="ac-block-lbl">⚡ Currently Building</div>
-            <div class="ac-item">MedicaLog: A Consent-Based Medication Adherence Awareness System</div>
-            <div class="ac-item">DocuQuery: AI-powered RAG platform for querying and managing private document fleets</div>
+            <div class="ac-item">Sluice: Real-time capacity governance for multi-tenant LLM inference</div>
+            <div class="ac-item">Vigilarch: Offline-first incident intelligence for multi-site operations</div>
           </div>
 
           <div class="ac-block teal">
             <div class="ac-block-lbl">📚 Currently Learning</div>
-            <div class="ac-item">A2A Communication</div>
-            <div class="ac-item">Model Context Protocol</div>
-            <div class="ac-item">AI Evaluation and Observability</div>
-            <div class="ac-item">Distributed AI Systems</div>
-            <div class="ac-item">Cloud Native AI Deployment</div>
+            <div class="ac-item">Distributed state, queues, and resilient routing</div>
+            <div class="ac-item">Observability and capacity governance</div>
+            <div class="ac-item">Offline-first and multi-site system design</div>
+            <div class="ac-item">Cloud-native deployment for AI workloads</div>
           </div>
         </div>
       </div>
@@ -193,9 +191,9 @@
             <div class="tl-title">AI Engineer</div>
             <div class="tl-org">Invisibl Cloud Solutions Pvt Ltd · Internship</div>
             <ul class="tl-list">
-              <li>Built a multi-agent Medical Protocol Assistant using LangGraph, ChromaDB, and Groq LLMs, enabling context-aware retrieval and safety-focused protocol validation.</li>
-              <li>Engineered a cyclic agent orchestration workflow with feedback loops, metadata-filtered retrieval, retry mechanisms, and MCP server integrations for tool-enabled agent execution.</li>
-              <li>Developed an LLM-powered validation layer that detects protocol conflicts, prioritizes context-specific guidance, and generates safety-aware recommendations using structured reasoning.</li>
+              <li>Engineered a multi-agent Medical Protocol Assistant with LangGraph, ChromaDB, Groq, and MCP integrations for context-aware retrieval and tool execution.</li>
+              <li>Designed cyclic orchestration with feedback loops, metadata-filtered retrieval, retries, and structured state transitions.</li>
+              <li>Built a safety-focused LLM validation layer to detect protocol conflicts and produce context-specific recommendations.</li>
             </ul>
           </div>
           <div class="tl-item">
@@ -204,9 +202,9 @@
             <div class="tl-title">Platform Engineer</div>
             <div class="tl-org">Invisibl Cloud Solutions Pvt Ltd · Internship</div>
             <ul class="tl-list">
-              <li>Built a production-grade RAG system for multi-format document understanding using LangChain, Sentence Transformers, and ChromaDB.</li>
-              <li>Designed an agentic RAG workflow with Strands SDK, enabling LLMs to autonomously perform retrieval, reasoning, and tool execution.</li>
-              <li>Developed a Python-based code interpreter for natural-language-driven CSV/XLSX analysis with dynamic visualisations.</li>
+              <li>Built a production-grade multi-format RAG system with LangChain, Sentence Transformers, and ChromaDB.</li>
+              <li>Designed an agentic RAG workflow with Strands SDK for autonomous retrieval, reasoning, and tool execution.</li>
+              <li>Developed a Python code interpreter for natural-language CSV/XLSX analysis and dynamic visualisations.</li>
             </ul>
           </div>
         </div>
@@ -385,6 +383,67 @@
         </div>
       </div>
 
+      <!-- 6. Sluice -->
+      <div class="proj-card reveal" data-cat="ai">
+        <div class="proj-top">
+          <div class="proj-icon ai"><i class="fa-solid fa-gauge-high"></i></div>
+          <div class="proj-links"><a href="https://github.com/VampiricCyborg/Sluice" target="_blank" rel="noopener" class="proj-link" title="GitHub"><i class="fa-brands fa-github"></i></a></div>
+        </div>
+        <div class="proj-status s-progress"><div class="sdot"></div> In Progress</div>
+        <div class="proj-title">Sluice · LLM Capacity Governance</div>
+        <div class="proj-desc">FastAPI proxy for self-hosted, multi-tenant vLLM clusters. Evaluates cache pressure, queue depth, and SLA violations to shape, queue, reject, or route requests while recording decisions for observability.</div>
+        <div class="tech-stack"><span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">vLLM</span><span class="tech-tag">Prometheus</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Redis</span></div>
+      </div>
+
+      <!-- 7. Vigilarch -->
+      <div class="proj-card reveal reveal-delay-1" data-cat="full">
+        <div class="proj-top">
+          <div class="proj-icon full"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="proj-links"><a href="https://github.com/VampiricCyborg/Vigilarch" target="_blank" rel="noopener" class="proj-link" title="GitHub"><i class="fa-brands fa-github"></i></a></div>
+        </div>
+        <div class="proj-status s-progress"><div class="sdot"></div> In Progress</div>
+        <div class="proj-title">Vigilarch · Incident Intelligence</div>
+        <div class="proj-desc">An offline-first incident intelligence system designed for multi-site physical operations, with a focus on dependable workflows when connectivity is limited.</div>
+        <div class="tech-stack"><span class="tech-tag">Distributed Systems</span><span class="tech-tag">Offline-first</span><span class="tech-tag">Incident Response</span><span class="tech-tag">Data Sync</span></div>
+      </div>
+
+      <!-- 8. NeuraScan AI -->
+      <div class="proj-card reveal" data-cat="ai">
+        <div class="proj-top">
+          <div class="proj-icon ai"><i class="fa-solid fa-brain"></i></div>
+          <div class="proj-links"><a href="https://github.com/VampiricCyborg/Intelligent-Behavioural-Screening-for-Neurological-Risk-Analysis" target="_blank" rel="noopener" class="proj-link" title="GitHub"><i class="fa-brands fa-github"></i></a></div>
+        </div>
+        <div class="proj-status s-done"><div class="sdot"></div> Prototype</div>
+        <div class="proj-title">NeuraScan AI</div>
+        <div class="proj-desc">AI-assisted behavioural screening platform that uses cognitive tasks and behavioural analysis to surface potential neurological risk indicators with explainable assessments.</div>
+        <div class="tech-stack"><span class="tech-tag">Dart</span><span class="tech-tag">Flutter</span><span class="tech-tag">Behavioural Analysis</span><span class="tech-tag">Explainable AI</span></div>
+      </div>
+
+      <!-- 9. Thermal Vision -->
+      <div class="proj-card reveal reveal-delay-1" data-cat="ai">
+        <div class="proj-top">
+          <div class="proj-icon ai"><i class="fa-solid fa-temperature-half"></i></div>
+          <div class="proj-links"><a href="https://github.com/VampiricCyborg/Thermal-Vision-Based-Airflow-Optimization" target="_blank" rel="noopener" class="proj-link" title="GitHub"><i class="fa-brands fa-github"></i></a></div>
+        </div>
+        <div class="proj-status s-done"><div class="sdot"></div> Prototype</div>
+        <div class="proj-title">Thermal Vision Airflow Optimization</div>
+        <div class="proj-desc">ESP32-based HVAC control system using thermal imaging for hotspot detection and lightweight ML to forecast thermal drift and optimize airflow.</div>
+        <div class="tech-stack"><span class="tech-tag">Python</span><span class="tech-tag">ESP32</span><span class="tech-tag">Computer Vision</span><span class="tech-tag">Edge ML</span></div>
+      </div>
+
+      <!-- 10. Telegram Data Analyst -->
+      <div class="proj-card reveal" data-cat="ai">
+        <div class="proj-top">
+          <div class="proj-icon ai"><i class="fa-brands fa-telegram"></i></div>
+          <div class="proj-links"><a href="https://github.com/VampiricCyborg/telegram-data-analyst-bot-tds" target="_blank" rel="noopener" class="proj-link" title="GitHub"><i class="fa-brands fa-github"></i></a></div>
+        </div>
+        <div class="proj-status s-progress"><div class="sdot"></div> In Progress</div>
+        <div class="proj-title">Telegram Data Analyst Bot</div>
+        <div class="proj-desc">A conversational Telegram interface for asking questions about data and turning natural-language requests into useful analysis workflows.</div>
+        <div class="tech-stack"><span class="tech-tag">Python</span><span class="tech-tag">Telegram API</span><span class="tech-tag">Data Analysis</span><span class="tech-tag">Automation</span></div>
+      </div>
+
+    </div>
   </section>
 
   <hr class="divider" />
@@ -423,12 +482,14 @@
           <span class="skill-pill">RAG Pipelines</span>
           <span class="skill-pill">Agentic Workflows</span>
           <span class="skill-pill">Multi-Agent Systems</span>
-          <span class="skill-pill">Langraph</span>
+          <span class="skill-pill">LangGraph</span>
           <span class="skill-pill">LangChain</span>
           <span class="skill-pill">Agent Orchestration</span>
           <span class="skill-pill">MCP Servers</span>
           <span class="skill-pill">Prompt Engineering</span>
           <span class="skill-pill">Semantic Search</span>
+          <span class="skill-pill">LLM Serving</span>
+          <span class="skill-pill">AI Observability</span>
         </div>
       </div>
 
@@ -443,6 +504,8 @@
           <span class="skill-pill">REST APIs</span>
           <span class="skill-pill">Authentication</span>
           <span class="skill-pill">Async Processing</span>
+          <span class="skill-pill">Distributed Systems</span>
+          <span class="skill-pill">Queueing &amp; Resilience</span>
         </div>
       </div>
 
@@ -458,6 +521,8 @@
           <span class="skill-pill">Data Processing</span>
           <span class="skill-pill">NumPy</span>
           <span class="skill-pill">Pandas</span>
+          <span class="skill-pill">PostgreSQL</span>
+          <span class="skill-pill">Redis</span>
         </div>
       </div>
 
@@ -471,6 +536,8 @@
           <span class="skill-pill">AWS S3</span>
           <span class="skill-pill">Git / GitHub</span>
           <span class="skill-pill">Vercel</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">Prometheus</span>
         </div>
       </div>
 
@@ -484,6 +551,8 @@
           <span class="skill-pill">Scripting Languages</span>
           <span class="skill-pill">SQL</span>
           <span class="skill-pill">Java</span>
+          <span class="skill-pill">Dart</span>
+          <span class="skill-pill">TypeScript</span>
 
         </div>
       </div>
@@ -702,6 +771,24 @@
         + `?subject=Portfolio Contact from ${encodeURIComponent(name)}`
         + `&body=${encodeURIComponent(msg + '\n\nFrom: ' + name + '\nEmail: ' + email)}`;
     }
+  </script>
+  <script>
+    // Keep the featured-project grid focused on the current portfolio.
+    document.querySelectorAll('.proj-card').forEach((card) => {
+      const title = card.querySelector('.proj-title')?.textContent.trim() || '';
+      if (title.startsWith('Agentic RAG') || title.startsWith('RTMRA') || title.startsWith('Telegram Data Analyst')) {
+        card.remove();
+        return;
+      }
+
+      const status = card.querySelector('.proj-status');
+      if (title.startsWith('MedicaLog')) status.innerHTML = '<div class="sdot"></div> Prototype';
+      if (title.startsWith('DocuQuery')) {
+        status.className = 'proj-status s-done';
+        status.innerHTML = '<div class="sdot"></div> Completed';
+      }
+      if (title.startsWith('Thermal Vision')) status.innerHTML = '<div class="sdot"></div> Hardware Ready';
+    });
   </script>
 </body>
 </html>
