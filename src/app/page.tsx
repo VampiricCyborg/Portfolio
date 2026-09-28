@@ -1,4 +1,3 @@
-import { Cursor } from "@/components/Cursor";
 import { Header } from "@/components/Header";
 import { HorizontalTrack } from "@/components/HorizontalTrack";
 import { Preloader } from "@/components/Preloader";
@@ -23,7 +22,6 @@ export default function Home() {
       </a>
       <Preloader />
       <SmoothScroll />
-      <Cursor />
       <Header />
       <main>
         <HorizontalTrack>

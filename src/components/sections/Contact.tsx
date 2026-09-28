@@ -17,13 +17,13 @@ export function Contact() {
               lines={[
                 "Let's talk",
                 <Marked key="m" kind="loop" delay={0.9}>
-                  <span className="text-red">infrastructure.</span>
+                  <span className="text-red">shop.</span>
                 </Marked>,
               ]}
             />
           </h2>
           <Reveal delay={0.2} as="p" className="mt-8 max-w-xl text-lg leading-snug text-paper/75 hz:text-[clamp(1rem,2.1vh,1.2rem)]">
-            I&apos;m looking for AI/ML infrastructure internships: inference, retrieval, evals, agent tooling. If you&apos;re working on the layer under the model, I&apos;d like to hear about it.
+            I like talking about inference, retrieval, evals and agent tooling. If you&apos;re working on the layer under the model, I&apos;d like to hear about it.
           </Reveal>
         </div>
 

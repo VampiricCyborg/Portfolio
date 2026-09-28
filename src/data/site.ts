@@ -17,23 +17,16 @@ export const nav = [
   { id: "contact", label: "Contact" },
 ] as const;
 
-export const heroStats = [
-  { value: "30% → 2%", label: "Guaranteed-tier SLA violations under overload (Sluice)" },
-  { value: "11.8 ms", label: "P50 end-to-end retrieval latency in production (DocuQuery)" },
-  { value: "95%", label: "Agent success rate across 1,000 test cases (internship)" },
-  { value: "Knight", label: "LeetCode, 1850+ contest rating, 800+ problems" },
-];
-
 export const aboutParagraphs = [
   "I'm a Computer Science student at Chennai Institute of Technology, and I'm doing a BS in Data Science at IIT Madras at the same time.",
   "I care about the parts of AI systems that break in production. That means how requests get admitted when the GPUs are full, why an embedding service runs out of memory, whether a retrieved passage really supports the answer, and what an agent should remember between sessions.",
-  "I learn these things by building them and measuring them. Every project here has a README that reports what I measured and where it fell short. Marginalis pre-registered its hypothesis before reading the held-out data, and the effect held in only one of three regions. The README says exactly that.",
+  "I learn these things by building them and measuring them, and I try to be honest about what I find — writing up what worked, what didn't, and where an idea looked better on paper than it held up in practice.",
   "Before this I did two internships at Invisibl Cloud Solutions, building production RAG pipelines, multi-agent workflows and a self-healing data pipeline.",
 ];
 
 export const now = [
-  { label: "Building", value: "Cairn, a git-native memory layer for AI coding agents" },
-  { label: "Just shipped", value: "Marginalis, a marginal-emissions analysis of US grid data" },
+  { label: "Building", value: "A memory layer for AI coding agents" },
+  { label: "Exploring", value: "Causal methods for energy and grid data" },
   { label: "Learning", value: "LLM evals, inference serving, distributed systems" },
   { label: "Based in", value: "Chennai, India" },
 ];

@@ -91,14 +91,6 @@ html.lenis body {
   overflow: clip;
 }
 
-/* Hide the native cursor only when the custom one is running. */
-@media (hover: hover) and (pointer: fine) {
-  html.has-cursor,
-  html.has-cursor * {
-    cursor: none !important;
-  }
-}
-
 @layer components {
   .btn {
     @apply relative inline-flex h-12 items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-ink px-6 text-[0.95rem] font-semibold whitespace-nowrap text-ink transition-colors duration-300;
